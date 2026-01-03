@@ -548,16 +548,7 @@ template = '''
         <div class="nav-container">
             <div class="logo">
                 <div class="logo-icon">
-                    <!-- GANTI LOGO: Uncomment salah satu cara di bawah -->
-                    
-                    <!-- Cara 1: Pakai gambar dari folder static/images (GANTI NAMA FILE SESUAI PUNYA ANDA) -->
                     <img src="{{ url_for('static', filename='images/logo-permata.png') }}" alt="Logo PERMATA">
-                    
-                    <!-- Cara 2: Pakai URL online -->
-                    <!-- <img src="https://example.com/logo.png" alt="Logo PERMATA"> -->
-                    
-                    <!-- Cara 3: Default huruf P (Hapus atau comment img di atas jika pakai ini) -->
-                    <!-- <span style="color: white; font-size: 1.5rem;">P</span> -->
                 </div>
                 <span>PERMATA</span>
             </div>
@@ -645,73 +636,49 @@ template = '''
             <p class="section-subtitle">Pengurus Karang Taruna PERMATA Periode 2024-2026</p>
             
             <div class="struktur-grid">
-                <!-- PENGURUS 1 -->
                 <div class="struktur-card">
                     <div class="struktur-avatar">
-                        <!-- GANTI FOTO DI SINI -->
-                        <!-- Cara 1: Pakai gambar dari folder static/images -->
-                        <!-- Ganti nama file sesuai yang Anda miliki -->
                         <img src="{{ url_for('static', filename='images/profil ketua.jpg') }}" alt="Aditya Yuda Pratama">
-                        
-                        <!-- Jika gambar tidak ada, tampilkan placeholder -->
                         <span class="struktur-avatar-placeholder" style="display: none;">👨‍💼</span>
                     </div>
                     <h4>ADITYA YUDA PRATAMA</h4>
                     <p class="jabatan">Ketua Umum</p>
                 </div>
 
-                <!-- PENGURUS 2 -->
                 <div class="struktur-card">
                     <div class="struktur-avatar">
-                        <!-- GANTI FOTO DI SINI -->
-                        <!-- Cara 2: Pakai URL online -->
-                        <!-- <img src="https://example.com/foto-rifky.jpg" alt="Rifky Balya Syaifullah"> -->
-                        
-                        <!-- Jika tidak ada foto, tampilkan placeholder -->
                         <span class="struktur-avatar-placeholder">👨‍💼</span>
                     </div>
                     <h4>RIFKY BALYA SYAIFULLAH</h4>
                     <p class="jabatan">Wakil Ketua</p>
                 </div>
 
-                <!-- PENGURUS 3 -->
                 <div class="struktur-card">
                     <div class="struktur-avatar">
-                        <!-- GANTI FOTO DI SINI -->
-                        <!-- <img src="{{ url_for('static', filename='images/profil_siti.jpg') }}" alt="INTAN SUSILO TRI HANDAYANI"> -->
                         <span class="struktur-avatar-placeholder">👩‍💼</span>
                     </div>
                     <h4>INTAN SUSILO TRI HANDAYANI</h4>
                     <p class="jabatan">Bendahara 1</p>
                 </div>
 
-                <!-- PENGURUS 4 -->
                 <div class="struktur-card">
                     <div class="struktur-avatar">
-                        <!-- GANTI FOTO DI SINI -->
-                        <!-- <img src="{{ url_for('static', filename='images/profil_dimas.jpg') }}" alt="RIJAL HARITS BAKHTIYAR"> -->
                         <span class="struktur-avatar-placeholder">👨‍💼</span>
                     </div>
                     <h4>RIJAL HARITS BAKHTIYAR</h4>
                     <p class="jabatan">Bendahara 2</p>
                 </div>
 
-                <!-- PENGURUS 5 -->
                 <div class="struktur-card">
                     <div class="struktur-avatar">
-                        <!-- GANTI FOTO DI SINI -->
-                        <!-- <img src="{{ url_for('static', filename='images/profil_ratna.jpg') }}" alt="BELLA NUR UTAMIi"> -->
                         <span class="struktur-avatar-placeholder">👩‍💼</span>
                     </div>
                     <h4>BELLA NUR UTAMI</h4>
                     <p class="jabatan">Sekretaris 1</p>
                 </div>
 
-                <!-- PENGURUS 6 -->
                 <div class="struktur-card">
                     <div class="struktur-avatar">
-                        <!-- GANTI FOTO DI SINI -->
-                        <!-- <img src="{{ url_for('static', filename='images/profil_eko.jpg') }}" alt="DHESTA KURNIA A"> -->
                         <span class="struktur-avatar-placeholder">👨‍💼</span>
                     </div>
                     <h4>DHESTA KURNIA A</h4>
@@ -725,65 +692,41 @@ template = '''
             <p class="section-subtitle">Dokumentasi kegiatan dan program Karang Taruna PERMATA</p>
             
             <div class="gallery">
-                <!-- GALERI ITEM 1 - Foto -->
                 <div class="gallery-item">
-                    <!-- GANTI FOTO DI SINI -->
-                    <!-- Cara 1: Pakai gambar dari folder static/images -->
-                    <!-- Ganti nama file sesuai yang Anda miliki -->
                     <img src="{{ url_for('static', filename='images/kegiatan1.JPG') }}" alt="Kegiatan 1">
-                    
-                    <!-- Jika foto berhasil dimuat, placeholder tidak akan ditampilkan -->
                     <div class="gallery-placeholder" style="display: none;">🏆</div>
-                    <div class="gallery-caption">Kegiatan 1 - Kegiatan Malam Pentas Seni</div>
+                    <div class="gallery-caption">Kegiatan 1 - Malam Pentas Seni</div>
                 </div>
 
-                <!-- GALERI ITEM 2 -->
                 <div class="gallery-item">
-                    <!-- GANTI FOTO DI SINI -->
                     <img src="{{ url_for('static', filename='images/kegiatan2.JPG') }}" alt="Kegiatan 2">
                     <div class="gallery-placeholder" style="display: none;">🎭</div>
-                    <div class="gallery-caption">Kegiatan 2 - Kegiatan Jalan Sehat RW 01 Taji</div>
+                    <div class="gallery-caption">Kegiatan 2 - Jalan Sehat RW 01 Taji</div>
                 </div>
 
-                <!-- GALERI ITEM 3 -->
                 <div class="gallery-item">
-                    <!-- GANTI FOTO DI SINI -->
                     <img src="{{ url_for('static', filename='images/kegiatan 3.JPG') }}" alt="Kegiatan 3">
                     <div class="gallery-placeholder" style="display: none;">🌳</div>
-                    <div class="gallery-caption">Kegiatan 3 - Kegiatan Lomba Voli antar RT tan</div>
+                    <div class="gallery-caption">Kegiatan 3 - Lomba Voli antar RT</div>
                 </div>
 
-                <!-- GALERI ITEM 4 -->
                 <div class="gallery-item">
-                    <!-- GANTI FOTO DI SINI -->
                     <img src="{{ url_for('static', filename='images/kegiatan4.jpg') }}" alt="Kegiatan 4">
                     <div class="gallery-placeholder" style="display: none;">📖</div>
-                    <div class="gallery-caption">Kegiatan 4 - Deskripsi kegiatan</div>
+                    <div class="gallery-caption">Kegiatan 4</div>
                 </div>
 
-                <!-- GALERI ITEM 5 -->
                 <div class="gallery-item">
-                    <!-- GANTI FOTO DI SINI -->
                     <img src="{{ url_for('static', filename='images/kegiatan5.jpg') }}" alt="Kegiatan 5">
                     <div class="gallery-placeholder" style="display: none;">🤝</div>
-                    <div class="gallery-caption">Kegiatan 5 - Deskripsi kegiatan</div>
+                    <div class="gallery-caption">Kegiatan 5</div>
                 </div>
 
-                <!-- GALERI ITEM 6 - Video atau Foto -->
                 <div class="gallery-item">
-                    <!-- GANTI VIDEO DI SINI -->
-                    <!-- Cara 1: Pakai video dari folder static/videos -->
-                    <!-- <video src="{{ url_for('static', filename='videos/kegiatan1.mp4') }}" controls></video> -->
-                    
-                    <!-- Cara 2: Pakai foto -->
                     <img src="{{ url_for('static', filename='images/kegiatan6.jpg') }}" alt="Kegiatan 6">
-                    
                     <div class="gallery-placeholder" style="display: none;">🎨</div>
-                    <div class="gallery-caption">Kegiatan 6 - Deskripsi kegiatan</div>
+                    <div class="gallery-caption">Kegiatan 6</div>
                 </div>
-
-                <!-- TAMBAHKAN LEBIH BANYAK GALERI DI SINI -->
-                <!-- Copy paste struktur di atas dan ganti fotonya -->
             </div>
         </section>
 
@@ -853,7 +796,6 @@ template = '''
         themeToggle.addEventListener('click', () => {
             const currentTheme = html.getAttribute('data-theme');
             const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-            
             html.setAttribute('data-theme', newTheme);
             localStorage.setItem('theme', newTheme);
             themeIcon.textContent = newTheme === 'dark' ? '☀️' : '🌙';
@@ -869,19 +811,6 @@ template = '''
         document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
-            });
-        });
-
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
             });
         });
 
@@ -902,74 +831,18 @@ template = '''
             observer.observe(el);
         });
 
-        // Script untuk menangani gambar galeri
         document.addEventListener('DOMContentLoaded', function() {
-            // Untuk struktur avatar
-            document.querySelectorAll('.struktur-avatar img').forEach(img => {
-                if (img.complete && img.naturalWidth !== 0) {
-                    const placeholder = img.parentElement.querySelector('.struktur-avatar-placeholder');
-                    if (placeholder) {
-                        placeholder.style.display = 'none';
-                    }
-                }
-                
-                img.addEventListener('load', function() {
-                    const placeholder = this.parentElement.querySelector('.struktur-avatar-placeholder');
-                    if (placeholder) {
-                        placeholder.style.display = 'none';
-                    }
-                });
-                
+            document.querySelectorAll('img').forEach(img => {
                 img.addEventListener('error', function() {
-                    const placeholder = this.parentElement.querySelector('.struktur-avatar-placeholder');
+                    const placeholder = this.parentElement.querySelector('.gallery-placeholder, .struktur-avatar-placeholder');
                     if (placeholder) {
                         placeholder.style.display = 'flex';
                         this.style.display = 'none';
                     }
                 });
-            });
-
-            // Untuk gambar galeri
-            document.querySelectorAll('.gallery-item img').forEach(img => {
-                if (img.complete && img.naturalWidth !== 0) {
-                    const placeholder = img.parentElement.querySelector('.gallery-placeholder');
-                    if (placeholder) {
-                        placeholder.style.display = 'none';
-                    }
+                if (img.complete && img.naturalWidth === 0) {
+                    img.dispatchEvent(new Event('error'));
                 }
-                
-                img.addEventListener('load', function() {
-                    const placeholder = this.parentElement.querySelector('.gallery-placeholder');
-                    if (placeholder) {
-                        placeholder.style.display = 'none';
-                    }
-                });
-                
-                img.addEventListener('error', function() {
-                    const placeholder = this.parentElement.querySelector('.gallery-placeholder');
-                    if (placeholder) {
-                        placeholder.style.display = 'flex';
-                        this.style.display = 'none';
-                    }
-                });
-            });
-
-            // Untuk video galeri
-            document.querySelectorAll('.gallery-item video').forEach(video => {
-                video.addEventListener('loadeddata', function() {
-                    const placeholder = this.parentElement.querySelector('.gallery-placeholder');
-                    if (placeholder) {
-                        placeholder.style.display = 'none';
-                    }
-                });
-                
-                video.addEventListener('error', function() {
-                    const placeholder = this.parentElement.querySelector('.gallery-placeholder');
-                    if (placeholder) {
-                        placeholder.style.display = 'flex';
-                        this.style.display = 'none';
-                    }
-                });
             });
         });
     </script>
@@ -982,7 +855,3 @@ def index():
     return render_template_string(template)
 
 app = app
-
-
-
-
