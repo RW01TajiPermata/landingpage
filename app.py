@@ -633,7 +633,7 @@ template = '''
 
         <section id="struktur" class="scroll-animate">
             <h2>Struktur Organisasi</h2>
-            <p class="section-subtitle">Pengurus Karang Taruna PERMATA Periode 2024-2026</p>
+            <p class="section-subtitle">Pengurus Karang Taruna PERMATA Periode 2025-2030</p>
             
             <div class="struktur-grid">
                 <div class="struktur-card">
@@ -855,6 +855,7 @@ def index():
     return render_template_string(template)
 
 app = app
+
 
 
 
