@@ -1,9 +1,8 @@
-from flask import Flask, render_template_string, send_from_directory
-import os
+from flask import Flask, render_template_string
 
-app = Flask(__name__, static_folder='../static', static_url_path='/static')
+app = Flask(__name__)
 
-# Template HTML Statis (TEMPELKAN SEMUA KODE HTML ANDA DI SINI)
+# Template HTML Statis
 template = '''
 <!DOCTYPE html>
 <html lang="id">
@@ -552,7 +551,7 @@ template = '''
                     <!-- GANTI LOGO: Uncomment salah satu cara di bawah -->
                     
                     <!-- Cara 1: Pakai gambar dari folder static/images (GANTI NAMA FILE SESUAI PUNYA ANDA) -->
-                    <img src="/static/images/logo-permata.png" alt="Logo PERMATA">
+                    <img src="{{ url_for('static', filename='images/logo-permata.png') }}" alt="Logo PERMATA">
                     
                     <!-- Cara 2: Pakai URL online -->
                     <!-- <img src="https://example.com/logo.png" alt="Logo PERMATA"> -->
@@ -652,7 +651,7 @@ template = '''
                         <!-- GANTI FOTO DI SINI -->
                         <!-- Cara 1: Pakai gambar dari folder static/images -->
                         <!-- Ganti nama file sesuai yang Anda miliki -->
-                        <img src="/static/images/profil ketua.JPG" alt="Aditya Yuda Pratama">
+                        <img src="{{ url_for('static', filename='images/profil ketua.jpg') }}" alt="Aditya Yuda Pratama">
                         
                         <!-- Jika gambar tidak ada, tampilkan placeholder -->
                         <span class="struktur-avatar-placeholder" style="display: none;">👨‍💼</span>
@@ -679,7 +678,7 @@ template = '''
                 <div class="struktur-card">
                     <div class="struktur-avatar">
                         <!-- GANTI FOTO DI SINI -->
-                        <!-- <img src="/static/images/profil_siti.jpg" alt="INTAN SUSILO TRI HANDAYANI"> -->
+                        <!-- <img src="{{ url_for('static', filename='images/profil_siti.jpg') }}" alt="INTAN SUSILO TRI HANDAYANI"> -->
                         <span class="struktur-avatar-placeholder">👩‍💼</span>
                     </div>
                     <h4>INTAN SUSILO TRI HANDAYANI</h4>
@@ -690,7 +689,7 @@ template = '''
                 <div class="struktur-card">
                     <div class="struktur-avatar">
                         <!-- GANTI FOTO DI SINI -->
-                        <!-- <img src="/static/images/profil_dimas.jpg" alt="RIJAL HARITS BAKHTIYAR"> -->
+                        <!-- <img src="{{ url_for('static', filename='images/profil_dimas.jpg') }}" alt="RIJAL HARITS BAKHTIYAR"> -->
                         <span class="struktur-avatar-placeholder">👨‍💼</span>
                     </div>
                     <h4>RIJAL HARITS BAKHTIYAR</h4>
@@ -701,7 +700,7 @@ template = '''
                 <div class="struktur-card">
                     <div class="struktur-avatar">
                         <!-- GANTI FOTO DI SINI -->
-                        <!-- <img src="/static/images/profil_ratna.jpg" alt="BELLA NUR UTAMIi"> -->
+                        <!-- <img src="{{ url_for('static', filename='images/profil_ratna.jpg') }}" alt="BELLA NUR UTAMIi"> -->
                         <span class="struktur-avatar-placeholder">👩‍💼</span>
                     </div>
                     <h4>BELLA NUR UTAMI</h4>
@@ -712,7 +711,7 @@ template = '''
                 <div class="struktur-card">
                     <div class="struktur-avatar">
                         <!-- GANTI FOTO DI SINI -->
-                        <!-- <img src="/static/images/profil_eko.jpg" alt="DHESTA KURNIA A"> -->
+                        <!-- <img src="{{ url_for('static', filename='images/profil_eko.jpg') }}" alt="DHESTA KURNIA A"> -->
                         <span class="struktur-avatar-placeholder">👨‍💼</span>
                     </div>
                     <h4>DHESTA KURNIA A</h4>
@@ -731,7 +730,7 @@ template = '''
                     <!-- GANTI FOTO DI SINI -->
                     <!-- Cara 1: Pakai gambar dari folder static/images -->
                     <!-- Ganti nama file sesuai yang Anda miliki -->
-                    <img src="/static/images/kegiatan1.jpg" alt="Kegiatan 1">
+                    <img src="{{ url_for('static', filename='images/kegiatan1.jpg') }}" alt="Kegiatan 1">
                     
                     <!-- Jika foto berhasil dimuat, placeholder tidak akan ditampilkan -->
                     <div class="gallery-placeholder" style="display: none;">🏆</div>
@@ -741,7 +740,7 @@ template = '''
                 <!-- GALERI ITEM 2 -->
                 <div class="gallery-item">
                     <!-- GANTI FOTO DI SINI -->
-                    <img src="/static/images/kegiatan2.jpg" alt="Kegiatan 2">
+                    <img src="{{ url_for('static', filename='images/kegiatan2.jpg') }}" alt="Kegiatan 2">
                     <div class="gallery-placeholder" style="display: none;">🎭</div>
                     <div class="gallery-caption">Kegiatan 2 - Kegiatan Jalan Sehat RW 01 Taji</div>
                 </div>
@@ -749,7 +748,7 @@ template = '''
                 <!-- GALERI ITEM 3 -->
                 <div class="gallery-item">
                     <!-- GANTI FOTO DI SINI -->
-                    <img src="/static/images/kegiatan 3.jpg" alt="Kegiatan 3">
+                    <img src="{{ url_for('static', filename='images/kegiatan 3.jpg') }}" alt="Kegiatan 3">
                     <div class="gallery-placeholder" style="display: none;">🌳</div>
                     <div class="gallery-caption">Kegiatan 3 - Kegiatan Lomba Voli antar RT tan</div>
                 </div>
@@ -757,7 +756,7 @@ template = '''
                 <!-- GALERI ITEM 4 -->
                 <div class="gallery-item">
                     <!-- GANTI FOTO DI SINI -->
-                    <img src="/static/images/kegiatan4.jpg" alt="Kegiatan 4">
+                    <img src="{{ url_for('static', filename='images/kegiatan4.jpg') }}" alt="Kegiatan 4">
                     <div class="gallery-placeholder" style="display: none;">📖</div>
                     <div class="gallery-caption">Kegiatan 4 - Deskripsi kegiatan</div>
                 </div>
@@ -765,7 +764,7 @@ template = '''
                 <!-- GALERI ITEM 5 -->
                 <div class="gallery-item">
                     <!-- GANTI FOTO DI SINI -->
-                    <img src="/static/images/kegiatan5.jpg" alt="Kegiatan 5">
+                    <img src="{{ url_for('static', filename='images/kegiatan5.jpg') }}" alt="Kegiatan 5">
                     <div class="gallery-placeholder" style="display: none;">🤝</div>
                     <div class="gallery-caption">Kegiatan 5 - Deskripsi kegiatan</div>
                 </div>
@@ -774,10 +773,10 @@ template = '''
                 <div class="gallery-item">
                     <!-- GANTI VIDEO DI SINI -->
                     <!-- Cara 1: Pakai video dari folder static/videos -->
-                    <!-- <video src="/static/videos/kegiatan1.mp4" controls></video> -->
+                    <!-- <video src="{{ url_for('static', filename='videos/kegiatan1.mp4') }}" controls></video> -->
                     
                     <!-- Cara 2: Pakai foto -->
-                    <img src="/static/images/kegiatan6.jpg" alt="Kegiatan 6">
+                    <img src="{{ url_for('static', filename='images/kegiatan6.jpg') }}" alt="Kegiatan 6">
                     
                     <div class="gallery-placeholder" style="display: none;">🎨</div>
                     <div class="gallery-caption">Kegiatan 6 - Deskripsi kegiatan</div>
@@ -979,16 +978,8 @@ template = '''
 '''
 
 @app.route('/')
-def home():
+def index():
     return render_template_string(template)
 
-@app.route('/static/<path:path>')
-def serve_static(path):
-    return send_from_directory('../static', path)
-
-# Handler untuk Vercel
-def handler(request):
-    return app
-
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0', port=5000)
