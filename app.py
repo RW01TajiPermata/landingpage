@@ -757,7 +757,7 @@ template = '''
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <h3>Karang Taruna PERMATA</h3>
+                <h3>PERMATA</h3>
                 <p>Persatuan Muda Mudi Taji - Organisasi kepemudaan yang berkomitmen membangun generasi muda berprestasi dan berakhlak mulia.</p>
             </div>
             <div class="footer-section">
@@ -780,7 +780,7 @@ template = '''
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 Karang Taruna PERMATA. All rights reserved.</p>
+            <p>&copy; 2026 Karang Taruna PERMATA. All rights reserved.</p>
         </div>
     </footer>
 
@@ -855,6 +855,7 @@ def index():
     return render_template_string(template)
 
 app = app
+
 
 
 
