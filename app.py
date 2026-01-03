@@ -738,17 +738,17 @@ template = '''
                 <div class="card">
                     <div class="card-icon">📍</div>
                     <h3>Alamat</h3>
-                    <p>Jl. Raya Taji No. 123<br>Taji, Prambanan<br>Kabupaten Klaten, Jawa Tengah</p>
+                    <p>Jl. Raya Jogja Solo<br>Taji, Prambanan<br>Kabupaten Klaten, Jawa Tengah</p>
                 </div>
                 <div class="card">
                     <div class="card-icon">📱</div>
                     <h3>Kontak</h3>
-                    <p>WhatsApp: 0812-3456-7890<br>Email: info@ktpermata.org<br>Instagram: @kt_permata</p>
+                    <p>WhatsApp: 0812-3456-7890<br>Email: permata@gmail.com<br>Instagram: @permata_taji</p>
                 </div>
                 <div class="card">
                     <div class="card-icon">⏰</div>
                     <h3>Jam Operasional</h3>
-                    <p>Senin - Jumat: 16.00 - 20.00<br>Sabtu: 14.00 - 21.00<br>Minggu: Sesuai Kegiatan</p>
+                    <p>Sesuai Kegiatan intruksi ketua</p>
                 </div>
             </div>
         </section>
@@ -855,4 +855,5 @@ def index():
     return render_template_string(template)
 
 app = app
+
 
