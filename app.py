@@ -651,7 +651,7 @@ template = '''
                         <!-- GANTI FOTO DI SINI -->
                         <!-- Cara 1: Pakai gambar dari folder static/images -->
                         <!-- Ganti nama file sesuai yang Anda miliki -->
-                        <img src="{{ url_for('static', filename='images/profil ketua.Jjpg') }}" alt="Aditya Yuda Pratama">
+                        <img src="{{ url_for('static', filename='images/profil ketua.jpg') }}" alt="Aditya Yuda Pratama">
                         
                         <!-- Jika gambar tidak ada, tampilkan placeholder -->
                         <span class="struktur-avatar-placeholder" style="display: none;">👨‍💼</span>
@@ -982,6 +982,7 @@ def index():
     return render_template_string(template)
 
 app = app
+
 
 
 
