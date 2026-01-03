@@ -651,7 +651,7 @@ template = '''
                         <!-- GANTI FOTO DI SINI -->
                         <!-- Cara 1: Pakai gambar dari folder static/images -->
                         <!-- Ganti nama file sesuai yang Anda miliki -->
-                        <img src="{{ url_for('static', filename='images/profil ketua.jpg') }}" alt="Aditya Yuda Pratama">
+                        <img src="{{ url_for('static', filename='images/profil ketua.JPG') }}" alt="Aditya Yuda Pratama">
                         
                         <!-- Jika gambar tidak ada, tampilkan placeholder -->
                         <span class="struktur-avatar-placeholder" style="display: none;">👨‍💼</span>
@@ -730,7 +730,7 @@ template = '''
                     <!-- GANTI FOTO DI SINI -->
                     <!-- Cara 1: Pakai gambar dari folder static/images -->
                     <!-- Ganti nama file sesuai yang Anda miliki -->
-                    <img src="{{ url_for('static', filename='images/kegiatan1.jpg') }}" alt="Kegiatan 1">
+                    <img src="{{ url_for('static', filename='images/kegiatan1.JPG') }}" alt="Kegiatan 1">
                     
                     <!-- Jika foto berhasil dimuat, placeholder tidak akan ditampilkan -->
                     <div class="gallery-placeholder" style="display: none;">🏆</div>
@@ -740,7 +740,7 @@ template = '''
                 <!-- GALERI ITEM 2 -->
                 <div class="gallery-item">
                     <!-- GANTI FOTO DI SINI -->
-                    <img src="{{ url_for('static', filename='images/kegiatan2.jpg') }}" alt="Kegiatan 2">
+                    <img src="{{ url_for('static', filename='images/kegiatan2.JPG') }}" alt="Kegiatan 2">
                     <div class="gallery-placeholder" style="display: none;">🎭</div>
                     <div class="gallery-caption">Kegiatan 2 - Kegiatan Jalan Sehat RW 01 Taji</div>
                 </div>
@@ -748,7 +748,7 @@ template = '''
                 <!-- GALERI ITEM 3 -->
                 <div class="gallery-item">
                     <!-- GANTI FOTO DI SINI -->
-                    <img src="{{ url_for('static', filename='images/kegiatan 3.jpg') }}" alt="Kegiatan 3">
+                    <img src="{{ url_for('static', filename='images/kegiatan 3.JPG') }}" alt="Kegiatan 3">
                     <div class="gallery-placeholder" style="display: none;">🌳</div>
                     <div class="gallery-caption">Kegiatan 3 - Kegiatan Lomba Voli antar RT tan</div>
                 </div>
@@ -982,4 +982,5 @@ def index():
     return render_template_string(template)
 
 app = app
+
 
