@@ -748,7 +748,7 @@ template = '''
                 <div class="card">
                     <div class="card-icon">⏰</div>
                     <h3>Jam Operasional</h3>
-                    <p>Sesuai Kegiatan intruksi ketua</p>
+                    <p>Kegiatan Sesuai intruksi ketua</p>
                 </div>
             </div>
         </section>
@@ -855,5 +855,6 @@ def index():
     return render_template_string(template)
 
 app = app
+
 
 
