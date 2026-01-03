@@ -743,7 +743,7 @@ template = '''
                 <div class="card">
                     <div class="card-icon">📱</div>
                     <h3>Kontak</h3>
-                    <p>WhatsApp: 0812-3456-7890<br>Email: permata@gmail.com<br>Instagram: @permata_taji</p>
+                    <p>WhatsApp: 0895422608609(Yuda)<br>Email: permata@gmail.com<br>Instagram: @permata_taji</p>
                 </div>
                 <div class="card">
                     <div class="card-icon">⏰</div>
@@ -855,6 +855,7 @@ def index():
     return render_template_string(template)
 
 app = app
+
 
 
 
