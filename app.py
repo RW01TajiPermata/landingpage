@@ -638,7 +638,7 @@ template = '''
             <div class="struktur-grid">
                 <div class="struktur-card">
                     <div class="struktur-avatar">
-                        <img src="{{ url_for('static', filename='images/profil ketua.jpg') }}" alt="Aditya Yuda Pratama">
+                        <img src="{{ url_for('static', filename='images/profil_ketua.jpg') }}" alt="Aditya Yuda Pratama">
                         <span class="struktur-avatar-placeholder" style="display: none;">👨‍💼</span>
                     </div>
                     <h4>ADITYA YUDA PRATAMA</h4>
@@ -705,7 +705,7 @@ template = '''
                 </div>
 
                 <div class="gallery-item">
-                    <img src="{{ url_for('static', filename='images/kegiatan 3.JPG') }}" alt="Kegiatan 3">
+                    <img src="{{ url_for('static', filename='images/kegiatan3.JPG') }}" alt="Kegiatan 3">
                     <div class="gallery-placeholder" style="display: none;">🌳</div>
                     <div class="gallery-caption">Kegiatan 3 - Lomba Voli antar RT</div>
                 </div>
@@ -855,3 +855,4 @@ def index():
     return render_template_string(template)
 
 app = app
+
